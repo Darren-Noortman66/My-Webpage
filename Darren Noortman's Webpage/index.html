@@ -1,0 +1,281 @@
+﻿
+<!DOCTYPE html>
+<html>
+<title>Darren Noortman's Profile Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('Darren Noortman Background.jpg');
+        min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("Darren Noortman Profile.jpg");
+        min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("Darren Noortman Pain.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<	<div class="w3-display-middle" style="white-space:nowrap;">
+            <img src="Darren Logo.png" alt="Photo of Me" width="500" height="500">
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>I love using technology to solve problems.</em></p>
+        <p>
+           	My name is Darren Noortman, and I am an aspiring developer for applications and databases. 
+		I would like to work with databases more than any other type of programming development (Application development) as I enjoy it the most. I'm very eager to continue learning more in my field and
+		I am hoping to meet more people that can assist me in that path.
+	</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Darren Noortman</b></p><br>
+                <img src="Darren Noortman.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>
+                    Welcome to my website. This is a little project I did to showcase myself and my skills to anyone who may see it. The website is just a profile on me and has a lot of information on me, such as my education and wor experience.
+		    You can also click on project images to find projects that I have made through HyperionDev. Making this website was a lot of fun and I hope everyone likes what they see. 
+                </p>
+
+		<h4>Work Experience:</h4>
+		<p>		   
+                    <ul>
+        		<li>Movie-Store Clerk</li>
+        		<li>Salesman</li>
+    		   </ul>
+
+                </p>
+
+		<hr style="height:1px; border:none; color:#000; background-color:#000;">
+
+		<h4>Education:</h4>		
+		<p>
+                    <ul>
+        		<li>Certificate (HyperionDev)</li>
+        		<li>Matric</li>
+    		   </ul>
+                </p>
+
+            </div>
+        </div>
+        <p class="w3-large w3-center w3-padding-16">My Strengths Include: (On a scale of understanding)</p>
+        <p class="w3-wide">Python</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%"></div>
+        </div>
+        <p class="w3-wide">SQL</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%"></div>
+        </div>
+        <p class="w3-wide">Java</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%"></div>
+        </div>
+    </div>
+        
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black 2:38 PM 7/6/2021 w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center"><em>Here are some of my latest projects.</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="games.png" style="width:100%" onclick="location.href='https://github.com/Darren-Noortman66/SE-L1T15---Capstone-Project-II';" class="w3-hover-opacity" alt="Controller">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="Calculator.png" style="width:100%" onclick="location.href='https://github.com/Darren-Noortman66/SE-L1T12---Capstone-Project-I---Variables-and-Control-Structures';" class="w3-hover-opacity" alt="Photo of Me">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="Task System.png" style="width:100%" onclick="location.href='https://github.com/Darren-Noortman66/SE-L1T25---Capstone-Project-IV---Lists-Functions-and-String-Handling';" class="w3-hover-opacity" alt="Photo of Me">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="Project System.png" style="width:100%" onclick="location.href='https://github.com/Darren-Noortman66/SE-L2T07---Capstone-Project-I---OOP';" class="w3-hover-opacity" alt="Photo of Me">
+            </div>
+
+        </div>
+
+	<div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <p>Simple Game</p>
+            </div>
+
+            <div class="w3-col m3">
+                <p>Investment and Home-Loan-Repayment Calculator</p>
+            </div>
+
+            <div class="w3-col m3">
+                <p>Task Management System</p>
+            </div>
+
+            <div class="w3-col m3">
+                <p>Project Management System</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Contact Details</h3>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="Discovery.JPG" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Roodepoort, Gauteng, Sout Africa<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (+27) 083-952-8447<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: DarrenNoortman66@gmail.com.com<br>
+		    <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="https://www.linkedin.com/in/darren-noortman-768206195/" title="W3.CSS" target="_blank" class="w3-hover-text-green">LinkedIn</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+<!--
+	References:
+
+	- HyperionDev (2021). SE L3T17 - CSS Overview - Task 17. Retrieved 5 July 2021,
+  	from Dropbox/ Darren Noortman/ Task 17/ SE L3T17 - CSS Overview.pdf
+
+	- W3Schools (?). W3.CSS Templates - W3Schools. Retrieved 5 July 2021,
+  	from https://www.w3schools.com/w3css/w3css_templates.asp
+-->
