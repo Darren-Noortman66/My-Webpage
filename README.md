@@ -1,4 +1,4 @@
-# MDarren Noortman's Webpage
+# Darren Noortman's Webpage
 
 ## Here you will find all the needed resources for my personal webpage. (Code, pictures, etc)
 
